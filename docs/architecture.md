@@ -1,10 +1,10 @@
 # HR Data Platform: architecture and delivery boundaries
 
 > [!CAUTION]
-> **Independent portfolio demo: no Thales implementation or data.**
-> This showcase uses fictional data and generic reference designs to explain engineering ideas from my professional experience. It does not reproduce, document, or disclose Thales's actual systems, architecture, configuration, or critical data. It is not an official Thales project or endorsement.
+> **Professional experience, protected information.**
+> This public showcase uses independent reference designs and fictional examples, with no Thales implementation or data. It discloses no employer code, systems, configuration, or critical information and carries no official endorsement. Diagrams explain the design; they are illustrations, not application screenshots or execution results.
 
-This is a generic explanation of a layered enterprise data platform. It contains no internal schemas, identifiers, source contracts, or deployment details.
+The platform separates source ingestion, consistent operational records, analytical models, and reporting definitions.
 
 ## Four layers
 
@@ -35,12 +35,8 @@ The AI training dataset is a delivery contract of its own. Its preparation conne
   <img alt="Role, country scope, and data contract jointly determine the permitted records and attributes in an audience-specific view." src="https://raw.githubusercontent.com/MahdiHajjHassan/workforce-data-platform/main/assets/audience-scope-light.svg" width="500">
 </picture>
 
-This explains a general access model, not an employer's enforcement mechanisms or permission configuration.
-
 ## Validation and change review
 
 Common concerns include reconciling inputs, validating transformations, keeping reporting definitions consistent, and checking audience scope. Source or recipient changes can affect several layers, so implementation must be evaluated against both its business purpose and its delivery contract.
-
-The repository documents experience and concepts. It is not an executable replica, an internal specification, or evidence of a particular throughput or certification.
 
 [Project overview](../README.md)
