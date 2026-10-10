@@ -1,8 +1,10 @@
 # Workforce data platform
 
-I work on the data engineering behind HR reporting and controlled data sharing: bringing information from different sources into a consistent structure and making the right view available to each audience.
+> **Confidentiality disclaimer:** This is a generic reference/dummy showcase of my experience, using fictional examples only. It contains no employer code, internal identifiers, schemas, or real employee data. It does not reproduce or expose the confidential implementation.
 
-This repository is an anonymized overview of my professional experience. The diagram uses a common reference architecture; it does not reproduce an employer's system. Source code and internal data are confidential.
+At Thales, I implement data pipelines and reporting for critical HR data covering the company's global workforce — tens of thousands of employees worldwide. I bring information from different sources into a consistent structure and make the right view available to each audience.
+
+The diagrams illustrate common reference patterns and fictional scenarios.
 
 ## How the data becomes useful
 

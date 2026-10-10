@@ -1,5 +1,7 @@
 # Implementation responsibilities
 
+> **Confidentiality disclaimer:** This is a generic reference/dummy showcase of my experience, using fictional examples only. It contains no employer code, internal identifiers, schemas, or real employee data. It does not reproduce or expose the confidential implementation.
+
 My role centers on execution: turning approved requirements and architecture into working pipelines, reporting structures, and controlled outputs.
 
 | Area | My contribution |
