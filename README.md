@@ -6,19 +6,10 @@ This repository is an anonymized overview of my professional experience. The dia
 
 ## How the data becomes useful
 
-~~~mermaid
-flowchart TD
-    Sources["Different source systems"] --> Staging["Staging: receive inputs"]
-    Staging --> ODS["Operational store: standardize records"]
-    ODS --> Warehouse["Warehouse: organize business data"]
-    Warehouse --> Semantic["Semantic layer: define reporting measures"]
-    Semantic --> Dashboards["Interactive HR dashboards"]
-    Warehouse --> Sharing["Approved data-sharing views"]
-    Warehouse --> Downstream["Authorized downstream datasets"]
-    Scope["Role and country access rules"] -.-> Dashboards
-    Scope -.-> Sharing
-    Scope -.-> Downstream
-~~~
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/data-platform-dark.svg">
+  <img alt="Four data layers prepare source systems for HR dashboards, approved sharing views, and downstream datasets within role and country limits." src="assets/data-platform-light.svg" width="500">
+</picture>
 
 The layers turn different inputs into consistent business information. The outputs serve different needs: HR reporting, approved exchanges with other organizations, and preparation for authorized analytics or model-training consumers. Role and country rules limit each audience's access; having one platform does not give everyone the same view.
 

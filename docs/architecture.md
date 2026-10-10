@@ -23,16 +23,10 @@ A landing format is not automatically a reporting model, and a reporting model i
 
 Access decisions affect both which records a recipient sees and which attributes those records expose. Country and role scope must be considered together. A need for workforce counts does not imply a need for all employee attributes.
 
-~~~mermaid
-flowchart TD
-    Role["Recipient role"] --> Scope["Approved access scope"]
-    Country["Permitted country scope"] --> Scope
-    Contract["Agreed data contract"] --> Scope
-    Scope --> Rows["Permitted records"]
-    Scope --> Fields["Permitted attributes"]
-    Rows --> View["Audience-specific view"]
-    Fields --> View
-~~~
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../assets/audience-scope-dark.svg">
+  <img alt="Role, country scope, and data contract jointly determine the permitted records and attributes in an audience-specific view." src="../assets/audience-scope-light.svg" width="500">
+</picture>
 
 This explains a general access model, not an employer's enforcement mechanisms or permission configuration.
 
