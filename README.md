@@ -13,10 +13,10 @@ An HR team needs to understand its workforce. Another team needs a smaller set o
 It is for **HR teams, authorized downstream recipients, and AI teams**: people who need consistent reporting, clearly defined information, or training datasets appropriate to their responsibilities.
 
 <picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 540px)" srcset="assets/workforce-story-v2-mobile-dark.svg">
-  <source media="(max-width: 540px)" srcset="assets/workforce-story-v2-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/workforce-story-v2-dark.svg">
-  <img src="assets/workforce-story-v2-light.svg" alt="Fictional HR concept: related workforce definitions branch into an HR breakdown and a separately scoped recipient dataset; not Thales architecture." width="680">
+  <source media="(prefers-color-scheme: dark) and (max-width: 540px)" srcset="assets/workforce-story-v3-mobile-dark.svg">
+  <source media="(max-width: 540px)" srcset="assets/workforce-story-v3-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/workforce-story-v3-dark.svg">
+  <img src="assets/workforce-story-v3-light.svg" alt="Fictional HR concept: shared workforce definitions branch into HR reporting, controlled sharing, and a training dataset that feeds AI model training; not Thales architecture or model results." width="680">
 </picture>
 
 *Concept illustration of the fictional reference; not an application screenshot or an employer system diagram.*
