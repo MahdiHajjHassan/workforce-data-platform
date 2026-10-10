@@ -23,9 +23,12 @@ A landing format is not automatically a reporting model, and a reporting model i
 | --- | --- | --- |
 | Interactive dashboards | HR reporting and business decisions | The viewer's permitted role and country scope |
 | Sharing views | Approved exchanges with teams or organizations | Recipient contract and permitted fields and records |
-| Downstream datasets | Authorized analytical or model-training consumers | Approved purpose, audience, and data scope |
+| Downstream analytical datasets | Authorized analysis by other teams | Approved purpose, audience, and data scope |
+| AI training datasets | HR datasets supplied for AI model training | Approved training purpose, audience, permitted fields, and records |
 
 Access decisions affect both which records a recipient sees and which attributes those records expose. Country and role scope must be considered together. A need for workforce counts does not imply a need for all employee attributes.
+
+The AI training dataset is a delivery contract of its own. Its preparation connects the platform's consistent HR information to an authorized model-training use, with the approved purpose and data scope carried through to the output.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MahdiHajjHassan/workforce-data-platform/main/assets/audience-scope-dark.svg">

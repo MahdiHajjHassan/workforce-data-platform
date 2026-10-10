@@ -1,16 +1,16 @@
 # HR Data Platform
 
-## HR reporting and recipient delivery pipelines: different questions, dependable answers.
+## HR reporting, controlled sharing, and AI training datasets: different questions, dependable answers.
 
 > [!CAUTION]
 > **Independent portfolio demo: no Thales implementation or data.**
 > This showcase uses fictional data and generic reference designs to explain engineering ideas from my professional experience. It does not reproduce, document, or disclose Thales's actual systems, architecture, configuration, or critical data. It is not an official Thales project or endorsement.
 
-An HR team needs to understand its workforce. Another team needs a smaller set of information to do its own job. Both depend on the same underlying facts, but the answer each receives has to fit its question and its permitted scope.
+An HR team needs to understand its workforce. Another team needs a smaller set of information to do its own job. AI teams need datasets to train their models. They depend on the same underlying facts, but the output each receives has to fit its purpose and its permitted scope.
 
-**My contribution connected those inputs to useful HR answers.** At Thales, I delivered pipelines and reporting for critical HR data covering tens of thousands of employees worldwide. This public showcase explains the ideas through a fictional reference that readers can explore.
+**My contribution connected those inputs to useful HR answers and AI training datasets.** At Thales, I delivered pipelines, reporting, and datasets for AI model training using critical HR data covering tens of thousands of employees worldwide. This public showcase explains the ideas through a fictional reference that readers can explore.
 
-It is for **HR teams and authorized downstream recipients**: people who need consistent reporting, clearly defined information, and an output appropriate to their responsibilities.
+It is for **HR teams, authorized downstream recipients, and AI teams**: people who need consistent reporting, clearly defined information, or training datasets appropriate to their responsibilities.
 
 <picture>
   <source media="(prefers-color-scheme: dark) and (max-width: 540px)" srcset="assets/workforce-story-v2-mobile-dark.svg">
@@ -21,11 +21,11 @@ It is for **HR teams and authorized downstream recipients**: people who need con
 
 *Concept illustration of the fictional reference; not an application screenshot or an employer system diagram.*
 
-### One workforce, two different requests
+### One workforce, three different requests
 
-Imagine a fictional organization with teams in several countries. Its HR analyst is preparing a workforce breakdown for the countries they are allowed to report on. An authorized operations team needs a narrower dataset for its own planning.
+Imagine a fictional organization with teams in several countries. Its HR analyst is preparing a workforce breakdown for the countries they are allowed to report on. An authorized operations team needs a narrower dataset for its own planning. An AI team needs a dataset for an approved model-training purpose.
 
-The analyst asks, **“How many people are in each employment category across my permitted countries?”** The operations team asks, **“Which approved operational attributes do we need for our task?”**
+The analyst asks, **“How many people are in each employment category across my permitted countries?”** The operations team asks, **“Which approved operational attributes do we need for our task?”** The AI team asks, **“Which HR data can we use to train our model?”**
 
 Those requests share business information. They do not share an identical delivery contract.
 
@@ -33,14 +33,15 @@ Those requests share business information. They do not share an identical delive
 | --- | --- | --- |
 | HR analyst | A workforce breakdown with understandable categories and measures. | The reporting definition and the analyst's permitted role and countries. |
 | Authorized operations recipient | A smaller set of operational attributes. | The recipient's approved purpose, fields, and records. |
+| AI team | An HR dataset for model training. | The approved training purpose, audience, fields, and records. |
 
-For the analyst, a count is useful only if its population and categories mean what the report says they mean. For the operations team, receiving a dataset is useful only if its scope matches the job it was approved for.
+For the analyst, a count is useful only if its population and categories mean what the report says they mean. For the operations and AI teams, receiving a dataset is useful only if its scope matches the purpose it was approved for.
 
 That is why I care about the work behind the dashboard: agreeing on the question, making the information consistent, and carrying the audience boundary through to delivery.
 
 ### My contribution
 
-My delivery covered **ingestion, transformation, data modeling, and delivery**. I translated approved requirements and architecture into pipelines, reporting structures, and controlled outputs.
+My delivery covered **ingestion, transformation, data modeling, and delivery**. I translated approved requirements and architecture into pipelines, reporting structures, controlled outputs, and HR datasets supplied for AI model training.
 
 - **With the product owner,** I clarified the reporting or sharing outcome: the population, measures, and intended recipient.
 - **With the technical lead,** I discussed the architecture and implementation boundaries that shape the work.
@@ -81,9 +82,11 @@ I translated that requirement into transformations, models, and outputs. The pub
 
 ### Share business meaning; define each output separately
 
-A dashboard, a sharing view, and an authorized downstream dataset have different consumers. Reusing consistent business information is useful, but the reporting model alone does not define a recipient's contract.
+A dashboard, a sharing view, and a dataset for AI model training have different consumers. Reusing consistent business information is useful, but the reporting model alone does not define a recipient's contract.
 
 The fictional operations contract defines **which records** the recipient may receive and **which attributes** those records may expose. A need for workforce counts does not establish a need for every employee attribute.
+
+For AI model training, the dataset is another controlled output: its approved purpose, permitted records, and permitted fields define what the AI team receives. Preparing that dataset connects data engineering to the team's model-training work.
 
 The reference considers role and country together. This makes delivery boundaries more explicit, while requiring a recipient change to be reviewed for both business meaning and permitted scope.
 
