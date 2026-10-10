@@ -1,6 +1,8 @@
-# Architecture and delivery boundaries
+# HR Data Platform: architecture and delivery boundaries
 
-> **Confidentiality disclaimer:** This is a generic portfolio reference using fictional examples. It contains no employer code, internal identifiers, confidential schemas, real employee data, or confidential implementation details, and does not reproduce or expose the employer's implementation.
+> [!CAUTION]
+> **Independent portfolio demo: no Thales implementation or data.**
+> This showcase uses fictional data and generic reference designs to explain engineering ideas from my professional experience. It does not reproduce, document, or disclose Thales's actual systems, architecture, configuration, or critical data. It is not an official Thales project or endorsement.
 
 This is a generic explanation of a layered enterprise data platform. It contains no internal schemas, identifiers, source contracts, or deployment details.
 
@@ -26,8 +28,8 @@ A landing format is not automatically a reporting model, and a reporting model i
 Access decisions affect both which records a recipient sees and which attributes those records expose. Country and role scope must be considered together. A need for workforce counts does not imply a need for all employee attributes.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="../assets/audience-scope-dark.svg">
-  <img alt="Role, country scope, and data contract jointly determine the permitted records and attributes in an audience-specific view." src="../assets/audience-scope-light.svg" width="500">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MahdiHajjHassan/workforce-data-platform/main/assets/audience-scope-dark.svg">
+  <img alt="Role, country scope, and data contract jointly determine the permitted records and attributes in an audience-specific view." src="https://raw.githubusercontent.com/MahdiHajjHassan/workforce-data-platform/main/assets/audience-scope-light.svg" width="500">
 </picture>
 
 This explains a general access model, not an employer's enforcement mechanisms or permission configuration.

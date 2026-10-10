@@ -1,23 +1,25 @@
-# Implementation responsibilities
+# HR Data Platform: delivery responsibilities
 
-> **Confidentiality disclaimer:** This is a generic portfolio reference using fictional examples. It contains no employer code, internal identifiers, confidential schemas, real employee data, or confidential implementation details, and does not reproduce or expose the employer's implementation.
+> [!CAUTION]
+> **Independent portfolio demo: no Thales implementation or data.**
+> This showcase uses fictional data and generic reference designs to explain engineering ideas from my professional experience. It does not reproduce, document, or disclose Thales's actual systems, architecture, configuration, or critical data. It is not an official Thales project or endorsement.
 
-My role centers on execution: turning approved requirements and architecture into working pipelines, reporting structures, and controlled outputs.
+I turned approved requirements and architecture into data pipelines, reporting structures, and controlled outputs for HR teams and other authorized audiences. My delivery connected the business request to the engineering needed to answer it.
 
 | Area | My contribution |
 | --- | --- |
-| Requirements | Work with the product owner to make the reporting or sharing outcome concrete. |
-| Architecture | Discuss the approach and implementation boundaries with the technical lead. |
-| Data engineering | Implement ingestion, transformations, models, and delivery changes. |
-| Coordination | Coordinate execution with engineers and interns. |
-| Business delivery | Connect engineering work to dashboards, sharing views, and authorized downstream uses. |
+| Requirements | Clarified the reporting or sharing outcome with the product owner. |
+| Architecture | Discussed the approach and implementation boundaries with the technical lead. |
+| Data engineering | Implemented ingestion, transformations, models, and delivery changes. |
+| Coordination | Coordinated execution with engineers and interns. |
+| Business delivery | Connected engineering work to dashboards, sharing views, and authorized downstream uses. |
 
-## An illustrative requirement
+## An illustrative HR requirement
 
-Suppose an HR audience needs a workforce breakdown for its permitted countries, while another recipient needs a smaller set of operational attributes. These are different delivery contracts even when both depend on the same business information.
+An HR audience needs a workforce breakdown for its permitted countries, while another recipient needs a smaller set of operational attributes. These are different delivery contracts even when both depend on the same business information.
 
-Implementation involves clarifying the measures and population, mapping transformations through the layers, exposing the right output, and checking audience visibility. This example is fictional; it does not describe an actual employer dataset or recipient.
+This fictional reference documents the measures and population, transformations through the layers, output contracts, and audience visibility. It explains the delivery questions without describing an actual employer dataset or recipient.
 
-Confidentiality also applies to portfolio documentation. This repository describes responsibilities and common patterns without disclosing private implementation details or records.
+Confidentiality applies to the portfolio documentation too. This repository describes my responsibilities and common patterns without disclosing private implementation details or records.
 
-[Project overview](../README.md) · [Architecture](architecture.md)
+[Project overview](../README.md) · [Architecture](https://github.com/MahdiHajjHassan/workforce-data-platform/blob/main/docs/architecture.md)
