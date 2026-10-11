@@ -12,10 +12,10 @@ HR analysts need consistent workforce reports. Other business teams need approve
 **Tools:** SQL Server · T-SQL · Talend ETL · Power BI · DAX · SSAS
 
 <picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 540px)" srcset="assets/workforce-story-v4-mobile-dark.svg">
-  <source media="(max-width: 540px)" srcset="assets/workforce-story-v4-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/workforce-story-v4-dark.svg">
-  <img src="assets/workforce-story-v4-light.svg" alt="HR source inputs feed shared workforce, country, department, and job definitions. The model serves HR reporting, controlled sharing, and a training dataset that feeds AI model training." width="680">
+  <source media="(prefers-color-scheme: dark) and (max-width: 540px)" srcset="assets/workforce-story-v5-mobile-dark.svg">
+  <source media="(max-width: 540px)" srcset="assets/workforce-story-v5-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/workforce-story-v5-dark.svg">
+  <img src="assets/workforce-story-v5-light.svg" alt="Source HR records feed a shared workforce, country, department and job model. Three deliveries use that model: HR reporting, controlled sharing, and datasets for AI model training." width="680">
 </picture>
 
 ### One source of HR information, three uses

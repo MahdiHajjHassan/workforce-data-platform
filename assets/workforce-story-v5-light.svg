@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="754" viewBox="0 0 680 754" role="img" aria-labelledby="workforceTitle workforceDesc" data-model="source-records-shared-definitions-and-three-data-deliveries" data-variant="desktop" data-version="v5">
+<title id="workforceTitle">Shared HR definitions serve reporting, controlled sharing, and AI model training</title>
+<desc id="workforceDesc">Source HR records feed a shared workforce, country, department and job model. Three deliveries use that model: HR reporting, controlled sharing, and datasets for AI model training.</desc>
+<style>text{font-family:Segoe UI,Arial,sans-serif}path,rect,circle,ellipse{shape-rendering:geometricPrecision}</style>
+<rect x="0" y="0" width="680" height="754" rx="18" fill="#f5f7fa" stroke="none" stroke-width="1.5"/>
+<text x="28" y="54" font-size="29" font-weight="600" fill="#1c2d42" text-anchor="start">HR data, ready for three uses</text>
+<text x="28" y="96" font-size="19" font-weight="400" fill="#52647b" text-anchor="start">Shared definitions. Audience-specific deliveries.</text>
+<text x="28" y="136" font-size="22" font-weight="600" fill="#1c2d42" text-anchor="start">HR source inputs</text>
+<rect x="42" y="165" width="194" height="130" rx="5" fill="#ffffff" stroke="#ccd7e5" stroke-width="1.5"/>
+<rect x="28" y="151" width="194" height="130" rx="5" fill="#ffffff" stroke="#ccd7e5" stroke-width="1.5"/>
+<text x="46" y="186" font-size="21" font-weight="600" fill="#1c2d42" text-anchor="start">Source records</text>
+<path d="M46 201H204" fill="none" stroke="#ccd7e5" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="46" y="233" font-size="18" font-weight="400" fill="#52647b" text-anchor="start">Fields + records</text>
+<rect x="46" y="252" width="67.94" height="9" rx="2" fill="#e5f2f1" stroke="none" stroke-width="1.5"/>
+<rect x="128.16" y="252" width="75.84" height="9" rx="2" fill="#e5f2f1" stroke="none" stroke-width="1.5"/>
+<path d="M244 217H280" fill="none" stroke="#146970" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M274 212L280 217L274 222" fill="none" stroke="#146970" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="294" y="151" width="358" height="144" rx="8" fill="#e5f2f1" stroke="#146970" stroke-width="1.5"/>
+<text x="312" y="186" font-size="23" font-weight="600" fill="#1c2d42" text-anchor="start">Shared HR definitions</text>
+<path d="M312 201H634 M480 216V282" fill="none" stroke="#146970" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="312" y="235" font-size="19" font-weight="600" fill="#1c2d42" text-anchor="start">Workforce</text>
+<text x="500" y="235" font-size="19" font-weight="600" fill="#1c2d42" text-anchor="start">Country</text>
+<text x="312" y="276" font-size="19" font-weight="600" fill="#1c2d42" text-anchor="start">Department</text>
+<text x="500" y="276" font-size="19" font-weight="600" fill="#1c2d42" text-anchor="start">Job</text>
+<path d="M473 302V337 M125 337H558" fill="none" stroke="#146970" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M125 337V371" fill="none" stroke="#146970" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M120 365L125 371L130 365" fill="none" stroke="#146970" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M345 337V371" fill="none" stroke="#146970" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M340 365L345 371L350 365" fill="none" stroke="#146970" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M558 337V371" fill="none" stroke="#146970" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M553 365L558 371L563 365" fill="none" stroke="#146970" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="28" y="405" font-size="21" font-weight="600" fill="#1c2d42" text-anchor="start">HR reporting</text>
+<path d="M28 429H202L222 449V649H28Z" fill="#ffffff" stroke="#ccd7e5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M202 429V449H222" fill="none" stroke="#ccd7e5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="46" y="463" font-size="18" font-weight="600" fill="#1c2d42" text-anchor="start">Workforce report</text>
+<path d="M46 478H204" fill="none" stroke="#ccd7e5" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="46" y="512" font-size="18" font-weight="600" fill="#1c2d42" text-anchor="start">Country</text>
+<text x="137" y="512" font-size="18" font-weight="600" fill="#1c2d42" text-anchor="start">Count</text>
+<path d="M46 526H204 M126 492V594" fill="none" stroke="#ccd7e5" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="46" y="541" width="67.94" height="9" rx="2" fill="#e5f2f1" stroke="none" stroke-width="1.5"/>
+<rect x="128.16" y="541" width="75.84" height="9" rx="2" fill="#e5f2f1" stroke="none" stroke-width="1.5"/>
+<rect x="46" y="563" width="67.94" height="9" rx="2" fill="#e5f2f1" stroke="none" stroke-width="1.5"/>
+<rect x="128.16" y="563" width="75.84" height="9" rx="2" fill="#e5f2f1" stroke="none" stroke-width="1.5"/>
+<text x="46" y="625" font-size="18" font-weight="400" fill="#52647b" text-anchor="start">By category</text>
+<text x="250" y="405" font-size="21" font-weight="600" fill="#1c2d42" text-anchor="start">Controlled sharing</text>
+<rect x="250" y="429" width="188" height="154" rx="5" fill="#ffffff" stroke="#ccd7e5" stroke-width="1.5"/>
+<text x="268" y="463" font-size="18" font-weight="600" fill="#1c2d42" text-anchor="start">Approved subset</text>
+<path d="M268 478H420" fill="none" stroke="#ccd7e5" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="268" y="511" font-size="18" font-weight="400" fill="#1c2d42" text-anchor="start">Records in scope</text>
+<text x="268" y="552" font-size="18" font-weight="400" fill="#1c2d42" text-anchor="start">Permitted fields</text>
+<text x="250" y="625" font-size="18" font-weight="400" fill="#52647b" text-anchor="start">Authorized teams</text>
+<text x="461" y="405" font-size="21" font-weight="600" fill="#1c2d42" text-anchor="start">AI training dataset</text>
+<rect x="474" y="442" width="178" height="106" rx="5" fill="#ffffff" stroke="#ccd7e5" stroke-width="1.5"/>
+<rect x="461" y="429" width="178" height="106" rx="5" fill="#e5f2f1" stroke="#146970" stroke-width="1.5"/>
+<text x="479" y="464" font-size="20" font-weight="600" fill="#1c2d42" text-anchor="start">Training data</text>
+<path d="M479 478H621" fill="none" stroke="#146970" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="479" y="513" font-size="18" font-weight="400" fill="#52647b" text-anchor="start">Records + fields</text>
+<path d="M558 555V581" fill="none" stroke="#146970" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M553 575L558 581L563 575" fill="none" stroke="#146970" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="461" y="595" width="194" height="70" rx="8" fill="#ffffff" stroke="#146970" stroke-width="1.5"/>
+<text x="558" y="637" font-size="20" font-weight="600" fill="#1c2d42" text-anchor="middle">AI model training</text>
+<path d="M28 703H652" fill="none" stroke="#ccd7e5" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="28" y="733" font-size="18" font-weight="400" fill="#52647b" text-anchor="start">Each delivery draws on agreed HR definitions.</text>
+</svg>

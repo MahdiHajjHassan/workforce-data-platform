@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="1160" viewBox="0 0 360 1160" role="img" aria-labelledby="workforceTitle workforceDesc" data-model="source-records-shared-definitions-and-three-data-deliveries" data-variant="mobile" data-version="v5">
+<title id="workforceTitle">Shared HR definitions serve reporting, controlled sharing, and AI model training</title>
+<desc id="workforceDesc">Source HR records feed a shared workforce, country, department and job model. Three deliveries use that model: HR reporting, controlled sharing, and datasets for AI model training.</desc>
+<style>text{font-family:Segoe UI,Arial,sans-serif}path,rect,circle,ellipse{shape-rendering:geometricPrecision}</style>
+<rect x="0" y="0" width="360" height="1160" rx="18" fill="#111b29" stroke="none" stroke-width="1.5"/>
+<text x="24" y="49" font-size="28" font-weight="600" fill="#ecf2fa" text-anchor="start">HR data, ready</text>
+<text x="24" y="89" font-size="28" font-weight="600" fill="#ecf2fa" text-anchor="start">for three uses.</text>
+<text x="24" y="130" font-size="18" font-weight="400" fill="#b3c4d9" text-anchor="start">Shared definitions. Distinct outputs.</text>
+<text x="24" y="171" font-size="22" font-weight="600" fill="#ecf2fa" text-anchor="start">HR source inputs</text>
+<rect x="34" y="195" width="302" height="99" rx="5" fill="#192638" stroke="#37485e" stroke-width="1.5"/>
+<rect x="24" y="185" width="302" height="99" rx="5" fill="#192638" stroke="#37485e" stroke-width="1.5"/>
+<text x="44" y="218" font-size="21" font-weight="600" fill="#ecf2fa" text-anchor="start">Incoming HR records</text>
+<path d="M44 231H306" fill="none" stroke="#37485e" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="44" y="263" font-size="18" font-weight="400" fill="#b3c4d9" text-anchor="start">Fields + records</text>
+<path d="M180 300V326" fill="none" stroke="#83d4d6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M175 320L180 326L185 320" fill="none" stroke="#83d4d6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="24" y="340" width="312" height="163" rx="8" fill="#203e44" stroke="#83d4d6" stroke-width="1.5"/>
+<text x="44" y="376" font-size="23" font-weight="600" fill="#ecf2fa" text-anchor="start">Shared HR definitions</text>
+<path d="M44 391H316 M181 411V483" fill="none" stroke="#83d4d6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="44" y="438" font-size="19" font-weight="600" fill="#ecf2fa" text-anchor="start">Workforce</text>
+<text x="201" y="438" font-size="19" font-weight="600" fill="#ecf2fa" text-anchor="start">Country</text>
+<text x="44" y="478" font-size="19" font-weight="600" fill="#ecf2fa" text-anchor="start">Department</text>
+<text x="201" y="478" font-size="19" font-weight="600" fill="#ecf2fa" text-anchor="start">Job</text>
+<path d="M180 511V526H14V985" fill="none" stroke="#83d4d6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14 618H38" fill="none" stroke="#83d4d6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M32 613L38 618L32 623" fill="none" stroke="#83d4d6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14 798H38" fill="none" stroke="#83d4d6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M32 793L38 798L32 803" fill="none" stroke="#83d4d6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14 985H38" fill="none" stroke="#83d4d6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M32 980L38 985L32 990" fill="none" stroke="#83d4d6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="44" y="562" font-size="22" font-weight="600" fill="#ecf2fa" text-anchor="start">HR reporting</text>
+<path d="M44 580H316L336 600V698H44Z" fill="#192638" stroke="#37485e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M316 580V600H336" fill="none" stroke="#37485e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="64" y="614" font-size="19" font-weight="600" fill="#ecf2fa" text-anchor="start">Country</text>
+<text x="213" y="614" font-size="19" font-weight="600" fill="#ecf2fa" text-anchor="start">Headcount</text>
+<path d="M64 628H316 M196 596V669" fill="none" stroke="#37485e" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="64" y="642" width="108.36" height="9" rx="2" fill="#203e44" stroke="none" stroke-width="1.5"/>
+<rect x="195.04" y="642" width="120.96" height="9" rx="2" fill="#203e44" stroke="none" stroke-width="1.5"/>
+<text x="64" y="683" font-size="18" font-weight="400" fill="#b3c4d9" text-anchor="start">Breakdowns by category</text>
+<text x="44" y="746" font-size="22" font-weight="600" fill="#ecf2fa" text-anchor="start">Controlled sharing</text>
+<rect x="44" y="764" width="292" height="109" rx="5" fill="#192638" stroke="#37485e" stroke-width="1.5"/>
+<text x="64" y="800" font-size="20" font-weight="600" fill="#ecf2fa" text-anchor="start">Approved records + fields</text>
+<path d="M64 814H316" fill="none" stroke="#37485e" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="64" y="848" font-size="18" font-weight="400" fill="#b3c4d9" text-anchor="start">For authorized business teams</text>
+<text x="44" y="920" font-size="22" font-weight="600" fill="#ecf2fa" text-anchor="start">AI training dataset</text>
+<rect x="54" y="951" width="282" height="88" rx="5" fill="#192638" stroke="#37485e" stroke-width="1.5"/>
+<rect x="44" y="941" width="282" height="88" rx="5" fill="#203e44" stroke="#83d4d6" stroke-width="1.5"/>
+<text x="64" y="976" font-size="21" font-weight="600" fill="#ecf2fa" text-anchor="start">Training data</text>
+<text x="64" y="1009" font-size="18" font-weight="400" fill="#b3c4d9" text-anchor="start">Approved records + fields</text>
+<path d="M190 1045V1074" fill="none" stroke="#83d4d6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M185 1068L190 1074L195 1068" fill="none" stroke="#83d4d6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="78" y="1088" width="224" height="50" rx="8" fill="#192638" stroke="#83d4d6" stroke-width="1.5"/>
+<text x="190" y="1121" font-size="21" font-weight="600" fill="#ecf2fa" text-anchor="middle">AI model training</text>
+</svg>
