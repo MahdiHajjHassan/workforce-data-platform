@@ -1,0 +1,4 @@
+worker_code,full_name,location,team,contract,workload,salary,started,modified
+W001,Mira Cedar,LB,Engineering,employee,1,42000,2021-01-15,2026-10-11T09:00:00Z
+W006,Adam Cedar,LB,Engineering,employee,0.8,36000,2021-06-15,2026-10-11T09:00:00Z
+W028,Sami Pine,FR,Product,employee,1,50400,2023-01-15,2026-10-11T09:00:00Z
