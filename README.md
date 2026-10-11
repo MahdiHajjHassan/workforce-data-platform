@@ -48,8 +48,8 @@ For example, an HR analyst may need headcount by country and employment category
 | Semantic / cube layer | Define shared measures and dimensions for reports. |
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MahdiHajjHassan/workforce-data-platform/main/assets/data-platform-dark.svg">
-  <img src="https://raw.githubusercontent.com/MahdiHajjHassan/workforce-data-platform/main/assets/data-platform-light.svg" alt="HR architecture: source systems feed staging, an operational data store, a warehouse, and a semantic layer before audience-specific delivery." width="500">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/data-platform-v2-dark.svg">
+  <img src="assets/data-platform-v2-light.svg" alt="HR architecture: source systems feed staging, an operational data store, a warehouse, and a semantic layer before audience-specific delivery." width="500">
 </picture>
 
 ### Define the output as well as the model
