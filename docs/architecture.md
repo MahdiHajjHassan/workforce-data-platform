@@ -1,42 +1,40 @@
-# HR Data Platform: architecture and delivery boundaries
+# HR Data Platform | Data Layers and Access Rules
 
 > [!CAUTION]
-> **Professional experience, protected information.**
-> This public showcase uses independent reference designs and fictional examples, with no Thales implementation or data. It discloses no employer code, systems, configuration, or critical information and carries no official endorsement. Diagrams explain the design; they are illustrations, not application screenshots or execution results.
+> **Confidential enterprise work.** I worked with critical HR information at Thales. This public explanation uses independent examples, with no Thales implementation or data and no employer endorsement. Diagrams explain the architecture without disclosing employer systems or records.
 
-The platform separates source ingestion, consistent operational records, analytical models, and reporting definitions.
+This architecture connects source records to workforce reports, controlled business datasets, and inputs for AI model training. Each layer has a distinct job.
 
-## Four layers
+## Data layers
 
-| Layer | Purpose | Engineering concerns |
+| Layer | Purpose | Engineering decisions |
 | --- | --- | --- |
-| Staging | Receive source inputs | Input structure, load tracking, validation boundaries |
-| Operational data store | Standardize records and relationships | Consistent types and keys, source reconciliation, transformation rules |
-| Data warehouse | Organize information for analytics | Models, business definitions, historical representation where required |
-| Semantic / cube layer | Expose measures and reporting structures | Consistent calculations, reporting dimensions, dashboard interpretation |
+| Staging | Receive source inputs. | Input structure, validation, and load tracking. |
+| Operational data store (ODS) | Make records consistent across sources. | Data types, keys, relationships, and transformation rules. |
+| Data warehouse | Organize facts and dimensions for analysis. | Business definitions and historical representation where required. |
+| Semantic / cube layer | Define calculations used by reports. | Measures, dimensions, and reporting consistency. |
 
-A landing format is not automatically a reporting model, and a reporting model is not automatically a suitable data-sharing contract.
+A report's headcount depends on an agreed population and categories. Standardizing incoming records is one step; defining what the report counts is another.
 
-## Outputs and audience scope
+## Three output types
 
-| Output | Intended use | Visibility boundary |
+| Output | User | Access rules |
 | --- | --- | --- |
-| Interactive dashboards | HR reporting and business decisions | The viewer's permitted role and country scope |
-| Sharing views | Approved exchanges with teams or organizations | Recipient contract and permitted fields and records |
-| Downstream analytical datasets | Authorized analysis by other teams | Approved purpose, audience, and data scope |
-| AI training datasets | HR datasets supplied for AI model training | Approved training purpose, audience, permitted fields, and records |
+| HR reports and dashboards | HR analysts and business audiences. | Permitted countries and reporting roles. |
+| Controlled sharing datasets | Authorized downstream teams. | Approved purpose, records, and fields. |
+| HR datasets for AI model training | AI teams. | Approved training purpose and permitted data scope. |
 
-Access decisions affect both which records a recipient sees and which attributes those records expose. Country and role scope must be considered together. A need for workforce counts does not imply a need for all employee attributes.
-
-The AI training dataset is a delivery contract of its own. Its preparation connects the platform's consistent HR information to an authorized model-training use, with the approved purpose and data scope carried through to the output.
+Record selection and field selection are separate decisions. A recipient may be allowed to see workforce counts for one country without receiving identity or financial fields.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MahdiHajjHassan/workforce-data-platform/main/assets/audience-scope-dark.svg">
   <img alt="Role, country scope, and data contract jointly determine the permitted records and attributes in an audience-specific view." src="https://raw.githubusercontent.com/MahdiHajjHassan/workforce-data-platform/main/assets/audience-scope-light.svg" width="500">
 </picture>
 
-## Validation and change review
+## Change review
 
-Common concerns include reconciling inputs, validating transformations, keeping reporting definitions consistent, and checking audience scope. Source or recipient changes can affect several layers, so implementation must be evaluated against both its business purpose and its delivery contract.
+A source change can affect ingestion, transformations, relationships, and reporting calculations. A recipient change can affect the records and fields delivered. Review follows the change through to the report or dataset the audience receives.
 
-[Project overview](../README.md)
+Validation covers source reconciliation, transformation rules, consistent business definitions, and access rules for the output.
+
+[Project overview](https://github.com/MahdiHajjHassan/workforce-data-platform/blob/main/README.md) · [My delivery responsibilities](https://github.com/MahdiHajjHassan/workforce-data-platform/blob/main/docs/delivery.md)

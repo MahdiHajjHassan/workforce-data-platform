@@ -1,16 +1,15 @@
 # HR Data Platform
 
 > [!CAUTION]
-> **Professional experience, protected information.**
-> This public showcase uses independent reference designs and fictional examples, with no Thales implementation or data. It discloses no employer code, systems, configuration, or critical information and carries no official endorsement. Diagrams explain the design; they are illustrations, not application screenshots or execution results.
+> **Confidential enterprise work.** I worked with critical HR information at Thales. This public explanation uses independent examples, with no Thales implementation or data and no employer endorsement. Diagrams explain the architecture without disclosing employer systems or records.
 
-## HR reporting, controlled sharing, and AI training datasets: different questions, dependable answers.
+## HR reporting, controlled sharing, and datasets for AI training
 
-An HR team needs to understand its workforce. Another team needs a smaller set of information to do its own job. AI teams need datasets to train their models. They depend on the same underlying facts, but the output each receives has to fit its purpose and its permitted scope.
+HR analysts need consistent workforce reports. Other business teams need approved subsets of the data. AI teams need datasets for model training. I delivered the pipelines and data structures that connected these needs to usable HR information at Thales.
 
-**My contribution connected those inputs to useful HR answers and AI training datasets.** At Thales, I delivered pipelines, reporting, and datasets for AI model training using critical HR data covering tens of thousands of employees worldwide. This showcase follows the work from source inputs to the outputs each audience needs.
+**My contribution:** ingestion, SQL transformations, data modeling, reporting, and dataset delivery for critical HR information covering tens of thousands of employees worldwide. I clarified requirements with the product owner, discussed architecture with the technical lead, and coordinated delivery with engineers and interns.
 
-It is for **HR teams, authorized downstream recipients, and AI teams**: people who need consistent reporting, clearly defined information, or training datasets appropriate to their responsibilities.
+**Tools:** SQL Server · T-SQL · Talend ETL · Power BI · DAX · SSAS
 
 <picture>
   <source media="(prefers-color-scheme: dark) and (max-width: 540px)" srcset="assets/workforce-story-v4-mobile-dark.svg">
@@ -19,78 +18,51 @@ It is for **HR teams, authorized downstream recipients, and AI teams**: people w
   <img src="assets/workforce-story-v4-light.svg" alt="HR source inputs feed shared workforce, country, department, and job definitions. The model serves HR reporting, controlled sharing, and a training dataset that feeds AI model training." width="680">
 </picture>
 
-### One workforce, three different requests
+### One source of HR information, three uses
 
-Consider an organization with teams in several countries. Its HR analyst is preparing a workforce breakdown for the countries they are allowed to report on. An authorized operations team needs a narrower dataset for its own planning. An AI team needs a dataset for an approved model-training purpose.
-
-The analyst asks, **“How many people are in each employment category across my permitted countries?”** The operations team asks, **“Which approved operational attributes do we need for our task?”** The AI team asks, **“Which HR data can we use to train our model?”**
-
-Those requests share business information. They do not share an identical delivery contract.
-
-| Audience | What they need | What shapes the answer |
+| Audience | What they need | Why it matters |
 | --- | --- | --- |
-| HR analyst | A workforce breakdown with understandable categories and measures. | The reporting definition and the analyst's permitted role and countries. |
-| Authorized operations recipient | A smaller set of operational attributes. | The recipient's approved purpose, fields, and records. |
-| AI team | An HR dataset for model training. | The approved training purpose, audience, fields, and records. |
+| HR analysts | Workforce breakdowns with agreed populations, categories, and measures. | A report needs a consistent definition of who and what it counts. |
+| Authorized business teams | Selected records and fields for their responsibilities. | A team receives the information relevant to its task and permitted scope. |
+| AI teams | HR datasets supplied for model training. | Training-data preparation connects enterprise information to AI work. |
 
-For the analyst, a count is useful only if its population and categories mean what the report says they mean. For the operations and AI teams, receiving a dataset is useful only if its scope matches the purpose it was approved for.
+For example, an HR analyst may need headcount by country and employment category, while an operations recipient needs department and assignment information. These outputs share business definitions but have different fields and audiences.
 
-That is why I care about the work behind the dashboard: agreeing on the question, making the information consistent, and carrying the audience boundary through to delivery.
+### What I delivered
 
-### My contribution
-
-My delivery covered **ingestion, transformation, data modeling, and delivery**. I translated approved requirements and architecture into pipelines, reporting structures, controlled outputs, and HR datasets supplied for AI model training.
-
-- **With the product owner,** I clarified the reporting or sharing outcome: the population, measures, and intended recipient.
-- **With the technical lead,** I discussed the architecture and implementation boundaries that shape the work.
-- **With engineers and interns,** I coordinated execution and connected individual changes to the delivery requirement.
-
-The work was delivered as part of a team, with each engineering change connected to the business requirement.
-
----
+- Turned business requirements into ingestion and transformation work.
+- Connected operational records to analytical models and reporting definitions.
+- Delivered reporting and controlled datasets, including inputs for AI model training.
+- Validated changes and supported deployment and production troubleshooting.
 
 <details>
-<summary><strong>Engineering details: from source inputs to audience-specific outputs</strong></summary>
+<summary><strong>Engineering details: data layers, reporting, and access rules</strong></summary>
 
-### Give each layer a clear job
+### From incoming records to reporting
 
-The public reference separates receiving information, reconciling it, modeling it for analysis, and exposing reporting definitions. Each step answers a different engineering question.
-
-| Layer | Responsibility | Decision to make |
-| --- | --- | --- |
-| Staging | Receive source inputs. | What arrived, how is it structured, and where does input validation belong? |
-| Operational data store | Standardize records and relationships. | Which types, keys, and transformation rules make different sources consistent? |
-| Data warehouse | Organize information for analytics. | What business definitions and models answer the reporting question, including history where required? |
-| Semantic / cube layer | Expose measures and reporting structures. | Which calculations and dimensions make the dashboard's meaning consistent? |
-
-The separation gives each concern a place, but a source change can affect several layers. Implementation review therefore needs to follow the change through to the business output.
+| Layer | Job |
+| --- | --- |
+| Staging | Receive source inputs and check their structure. |
+| Operational data store (ODS) | Standardize types, keys, and relationships across sources. |
+| Data warehouse | Organize business facts and dimensions for analysis, including history where required. |
+| Semantic / cube layer | Define shared measures and dimensions for reports. |
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MahdiHajjHassan/workforce-data-platform/main/assets/data-platform-dark.svg">
   <img src="https://raw.githubusercontent.com/MahdiHajjHassan/workforce-data-platform/main/assets/data-platform-light.svg" alt="HR architecture: source systems feed staging, an operational data store, a warehouse, and a semantic layer before audience-specific delivery." width="500">
 </picture>
 
-### Model the question before delivering the answer
+### Define the output as well as the model
 
-In the HR request, “a breakdown” needs an agreed population, categories, and measures before it becomes a reporting requirement. Bringing inputs into one structure does not settle those definitions by itself.
+The reporting population, categories, and calculations define what a dashboard means. A dataset also needs its own permitted records and fields. A team that needs workforce counts does not automatically need salary or identity fields.
 
-I translated that requirement into transformations, models, and outputs. Checking audience visibility was part of the delivery responsibility.
+For AI training datasets, the approved purpose and access rules shape the delivered data. Preparing the dataset is part of the data engineering work that supports model training.
 
-### Share business meaning; define each output separately
+### Read further
 
-A dashboard, a sharing view, and a dataset for AI model training have different consumers. Reusing consistent business information is useful, but the reporting model alone does not define a recipient's contract.
-
-The operations contract defines **which records** the recipient may receive and **which attributes** those records may expose. A need for workforce counts does not establish a need for every employee attribute.
-
-For AI model training, the dataset is another controlled output: its approved purpose, permitted records, and permitted fields define what the AI team receives. Preparing that dataset connects data engineering to the team's model-training work.
-
-The reference considers role and country together. This makes delivery boundaries more explicit, while requiring a recipient change to be reviewed for both business meaning and permitted scope.
-
-### What to inspect next
-
-- [Architecture and delivery boundaries](https://github.com/MahdiHajjHassan/workforce-data-platform/blob/main/docs/architecture.md): layer responsibilities, output types, and audience scope.
-- [Implementation responsibilities](https://github.com/MahdiHajjHassan/workforce-data-platform/blob/main/docs/delivery.md): my role and the HR requirement behind this story.
-- [Policy-aware synthetic-data reference](https://github.com/MahdiHajjHassan/policy-aware-data-generator): recipient-specific development data shaped by role, country, and field permissions.
+- [Architecture and access rules](https://github.com/MahdiHajjHassan/workforce-data-platform/blob/main/docs/architecture.md)
+- [My delivery responsibilities](https://github.com/MahdiHajjHassan/workforce-data-platform/blob/main/docs/delivery.md)
+- [Permission-aware development datasets](https://github.com/MahdiHajjHassan/policy-aware-data-generator)
 
 </details>
 

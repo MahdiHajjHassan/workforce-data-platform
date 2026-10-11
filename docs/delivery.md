@@ -1,23 +1,23 @@
-# HR Data Platform: delivery responsibilities
+# HR Data Platform | My Delivery Responsibilities
 
 > [!CAUTION]
-> **Professional experience, protected information.**
-> This public showcase uses independent reference designs and fictional examples, with no Thales implementation or data. It discloses no employer code, systems, configuration, or critical information and carries no official endorsement. Diagrams explain the design; they are illustrations, not application screenshots or execution results.
+> **Confidential enterprise work.** I worked with critical HR information at Thales. This public explanation uses independent examples, with no Thales implementation or data and no employer endorsement. Diagrams explain the architecture without disclosing employer systems or records.
 
-I turned approved requirements and architecture into data pipelines, reporting structures, and controlled outputs for HR teams and other authorized audiences. I also supplied HR datasets for AI model training. My delivery connected each business request to the engineering needed to answer it.
+At Thales, I turned approved HR requirements into pipelines, data models, reports, and controlled datasets. I also supplied HR data for AI model training.
 
 | Area | My contribution |
 | --- | --- |
-| Requirements | Clarified the reporting or sharing outcome with the product owner. |
-| Architecture | Discussed the approach and implementation boundaries with the technical lead. |
-| Data engineering | Implemented ingestion, transformations, models, and delivery changes. |
-| Coordination | Coordinated execution with engineers and interns. |
-| Business delivery | Connected engineering work to dashboards, sharing views, and HR datasets for AI model training. |
+| Requirements | Clarified the reporting question, population, measures, and intended recipient with the product owner. |
+| Architecture | Discussed the implementation approach with the technical lead. |
+| Data engineering | Delivered ingestion, SQL transformations, models, and dataset outputs. |
+| Reporting | Connected the data structures to consistent reporting definitions. |
+| Delivery | Validated changes, managed deployment work, and supported production troubleshooting. |
+| Coordination | Coordinated work with engineers and interns. |
 
-## An HR delivery requirement
+## Follow the requirement through to the output
 
-An HR audience needs a workforce breakdown for its permitted countries, an operations recipient needs a smaller set of operational attributes, and an AI team needs a dataset for model training. These are different delivery contracts even when they depend on the same business information.
+An HR analyst needs a workforce breakdown. An operations team needs selected attributes. An AI team needs a training dataset. I connected the requirements for these outputs to transformations, models, validation, and the recipient's permitted records and fields.
 
-The delivery contract connects measures and population, transformations through the layers, output contracts, and audience visibility.
+My tools included SQL Server, T-SQL, Talend ETL, Power BI, DAX, and SSAS. My broader cloud data work included Dataflow, BigQuery, and Cloud Workflows.
 
-[Project overview](../README.md) · [Architecture](https://github.com/MahdiHajjHassan/workforce-data-platform/blob/main/docs/architecture.md)
+[Project overview](https://github.com/MahdiHajjHassan/workforce-data-platform/blob/main/README.md) · [Data layers and access rules](https://github.com/MahdiHajjHassan/workforce-data-platform/blob/main/docs/architecture.md)
